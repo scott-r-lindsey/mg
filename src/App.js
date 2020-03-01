@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './App.scss';
+import './styles/App.scss';
 
-//import './colors.scss'
 
 import CambriaGrove from './components/CambriaGrove.js';
 
