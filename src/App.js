@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
-import CambriaGrove from './component/CambriaGrove.js';
+//import './colors.scss'
+
+import CambriaGrove from './components/CambriaGrove.js';
 
 function App() {
 
@@ -11,10 +12,8 @@ function App() {
   //setPosts(['foo']);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <CambriaGrove />
-      </header>
+    <div>
+      <CambriaGrove />
     </div>
   );
 }

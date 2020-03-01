@@ -8,6 +8,7 @@ export default function Home() {
   return(
     <div>
       <Link to="/gridA" >Grid A</Link>
+      <Link to="/gridB" >Grid B</Link>
     </div>
   );
 }

@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 import GridATest from './GridATest.js';
+import GridBTest from './GridBTest.js';
 import Home from './Home.js';
 
 
@@ -23,6 +24,11 @@ export default function CambriaGrove() {
         <Route path="/gridA">
           <GridATest />
         </Route>
+        <Route path="/gridB">
+          <GridBTest />
+        </Route>
+
+
       </Switch>
     </Router>
   );
