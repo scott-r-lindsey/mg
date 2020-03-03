@@ -1,7 +1,9 @@
+
+@import './breakpoints.scss';
 @import './colors.scss';
 @import './typography.scss';
+@import './ui.scss';
+@import './shared.scss';
+@import './blog-landing.scss';
+@import './blog-detail.scss';
 
-body {
-    background-color:white;
-    font-family: PFDINDisplayPro-Regular;
-}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -15,13 +15,22 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+function setSpacing() {
+    const width = window.innerWidth;
+    if (width > 600) {
+          return 4;
+    } else {
+          return 2;
+    }
+}
+
 export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
     <Container maxWidth="lg">
       <div className={classes.root}>
-        <Grid container spacing={3}>
+        <Grid container spacing={setSpacing()}>
           <Grid item xs={12}>
             <div style={{width: '100%', backgroundColor: 'blue'}}>foo</div>
           </Grid>

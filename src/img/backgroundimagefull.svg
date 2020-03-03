@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="359" height="547" viewBox="0 0 359 547">
+    <defs>
+        <path id="a" d="M0 0h359v547H0z"/>
+        <linearGradient id="d" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#ABBA8C"/>
+            <stop offset="100%" stop-color="#DCD9AF"/>
+        </linearGradient>
+        <path id="c" d="M0 0h1440v701H0z"/>
+        <linearGradient id="f" x1="100%" x2="6.769%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#FFF" stop-opacity=".652"/>
+            <stop offset="100%" stop-color="#DFD4B3"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="b" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="#D8D8D8" fill-rule="nonzero" xlink:href="#a"/>
+        <g mask="url(#b)">
+            <g transform="translate(-541 -77)">
+                <mask id="e" fill="#fff">
+                    <use xlink:href="#c"/>
+                </mask>
+                <use fill="url(#d)" xlink:href="#c"/>
+                <g stroke="url(#f)" stroke-width="3" mask="url(#e)" opacity=".373">
+                    <g transform="rotate(-90 714.5 62.5)">
+                        <path d="M486 0C217.59 0 0 224.753 0 502m286.425 457.856C347.312 988.216 414.872 1004 486 1004c268.41 0 486-224.753 486-502 0-119.631-40.513-229.488-108.14-315.733"/>
+                        <path d="M486 868c195.509 0 354-163.864 354-366S681.509 136 486 136c-115.39 0-217.887 57.081-282.513 145.423C158.615 342.76 132 419.166 132 502c0 202.136 158.491 366 354 366z"/>
+                        <path d="M802.079 246.217C728.56 149.864 614.529 88 486.5 88 264.758 88 85 273.578 85 502.5S264.758 917 486.5 917 888 731.422 888 502.5"/>
+                        <path d="M486.5 231C341.525 231 224 352.33 224 502c0 43.709 10.023 85 27.826 121.56M486.5 773C631.475 773 749 651.67 749 502c0-36.512-6.994-71.338-19.675-103.127"/>
+                        <path d="M486.5 651c79.805 0 144.5-66.71 144.5-149 0-33.876-10.963-65.111-29.431-90.14M486.5 353C406.695 353 342 419.71 342 502c0 57.152 31.205 106.788 77.005 131.78"/>
+                        <ellipse cx="487" cy="503" rx="83" ry="86"/>
+                        <path d="M635.724 641.464C668.209 604.463 688 555.367 688 501.5 688 386.349 597.562 293 486 293s-202 93.349-202 208.5S374.438 710 486 710"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

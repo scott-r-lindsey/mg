@@ -7,3 +7,49 @@
 
 @font-face {font-family: 'PFDINDisplayPro-Regular';src: url('../fonts/pfdin-displaypro-regular.eot');src: url('../fonts/pfdin-displaypro-regular.eot?#iefix') format('embedded-opentype'),url('../fonts/pfdin-displaypro-regular.woff2') format('woff2'),url('../fonts/pfdin-displaypro-regular.woff') format('woff'),url('../fonts/pfdin-displaypro-regular.ttf') format('truetype');}
 
+h1, h2, h3, h4{
+    font-family: PFDINDisplayPro-Bold;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    margin: 0;
+}
+
+h1.Dark, h2.Dark, h3.Dark, h4.Dark{
+    color: $greyish-brown;
+}
+h1.Active, h2.Active, h3.Active, h4.Active{
+    color: $peacock-blue;
+}
+
+h1{
+    font-size: 45px;
+    line-height: 1.07;
+}
+h2{
+    font-size: 34px;
+    line-height: 1.24;
+}
+h3{
+    font-size: 24px;
+    line-height: 1.25;
+}
+h4{
+    font-size: 20px;
+    line-height: 1.25;
+}
+
+a{
+    color:$moss-green;
+    font-weight:bold;
+    text-decoration: none;
+    &:hover{
+        opacity: 80%;
+    }
+    &.disabled{
+        pointer-events: none;
+        color: $very-light-grey
+    }
+}
+

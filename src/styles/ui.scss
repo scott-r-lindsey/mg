@@ -1,0 +1,33 @@
+
+button {
+    &.primary{
+        height: 50px;
+        width: 207px;
+        background-color: $moss-green;
+        color: white;
+        border-radius: 25px;
+        border: none;
+        font-size: 20px;
+        font-family: PFDINDisplayPro-Bold;
+        &:hover{
+            background-color: darken($moss-green, 10%);
+        }
+    }
+    &.secondary{
+        height: 50px;
+        width: 207px;
+        background-color: white;
+        color: $moss-green;
+        border-radius: 25px;
+        border: none;
+        font-size: 20px;
+        font-family: PFDINDisplayPro-Bold;
+        border: 2px solid $moss-green;
+        &:hover{
+            border: 2px solid darken($moss-green, 10%);
+            color: darken($moss-green, 10%);
+        }
+    }
+
+}
+
