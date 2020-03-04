@@ -42,7 +42,7 @@ function BlogLanding({ width }) {
 
           {
             /xs/.test(width) ? null :
-            <Grid key="desktop-news" item xs={4}>
+            <Grid className={"desktop-news"} key="desktop-news" item xs={4}>
               <Newsletter />
             </Grid>
           }

@@ -7,3 +7,13 @@
 @import './blog-landing.scss';
 @import './blog-detail.scss';
 
+
+.dev-landing{
+    min-height:400px;
+}
+.grid-b-test{
+    margin: 40px 0;
+    .MuiGrid-item{
+        background-color:#ddd;
+    }
+}

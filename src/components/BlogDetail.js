@@ -7,7 +7,6 @@ import withWidth from '@material-ui/core/withWidth';
 import { useParams} from "react-router";
 import { makeStyles } from '@material-ui/core/styles';
 import { posts } from '../posts.json';
-import { Link } from 'react-router-dom';
 import Hero from './blog/Hero.js';
 import Body from './blog/Body.js';
 import { copy } from '../copy.json';
@@ -25,6 +24,7 @@ function BlogDetail({ width}) {
   const mobile = /xs/.test(width);
   const gutter = /xs|sm/.test(width) ? 2 : 3;
 
+  /* eslint-disable */
   const {image, title, authorUrl, date, author} = post;
 
   return (

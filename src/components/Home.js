@@ -6,11 +6,12 @@ import {
 export default function Home() {
 
   return(
-    <div>
-      <Link to="/gridA" >Grid A</Link>
-      <Link to="/gridB" >Grid B</Link>
-      <Link to="/gridC" >Grid C</Link>
-      <Link to="/blog" >Blog</Link>
+    <div className={"dev-landing"}>
+      <ul>
+        <li><Link to="/gridA" >Grid A</Link></li>
+        <li><Link to="/gridB" >Grid B</Link></li>
+        <li><Link to="/blog" >Blog</Link></li>
+      </ul>
     </div>
   );
 }
