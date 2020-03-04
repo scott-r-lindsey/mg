@@ -10,6 +10,7 @@ import { posts } from '../posts.json';
 import { Link } from 'react-router-dom';
 import Hero from './blog/Hero.js';
 import Body from './blog/Body.js';
+import { copy } from '../copy.json';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -31,9 +32,7 @@ function BlogDetail({ width}) {
       <div className={classes.root}>
         <Grid container className="blog-detail" spacing={gutter}>
 
-          { mobile ? null :
-            <Grid key="hero-gap-1" item xs={2} />
-          }
+          { mobile ? null : <Grid key="hero-gap-1" item xs={2} /> }
           <Grid key="blog" className={"hero"} item xs={12} sm={8}>
             <Hero
               image={image}
@@ -41,42 +40,37 @@ function BlogDetail({ width}) {
               author={author}
             />
           </Grid>
-          { mobile ? null :
-            <Grid key="hero-gap-2" item xs={2} />
-          }
+          { mobile ? null : <Grid key="hero-gap-2" item xs={2} /> }
 
-          { mobile ? null :
-            <Grid key="title-gap-1" item xs={2} />
-          }
+          { mobile ? null : <Grid key="title-gap-1" item xs={2} /> }
           <Grid key="title" className={"title"} item xs={12} sm={8}>
             <h2 className={"Dark"}>{ title }</h2>
           </Grid>
-          { mobile ? null :
-            <Grid key="title-gap-2" item xs={2} />
-          }
+          { mobile ? null : <Grid key="title-gap-2" item xs={2} /> }
 
-          { mobile ? null :
-            <Grid key="body-gap-1" item xs={2} />
-          }
+          { mobile ? null : <Grid key="body-gap-1" item xs={2} /> }
           <Grid key="body" className={"body"} item xs={12} sm={8}>
-            <Body />
+            <Body copy={copy} />
           </Grid>
-          { mobile ? null :
-            <Grid key="body-gap-2" item xs={2} />
-          }
+          { mobile ? null : <Grid key="body-gap-2" item xs={2} /> }
 
-          { mobile ? null :
-            <Grid key="more-title" item xs={12}>
-              <h2 className={"Dark more-title"}>More from the blog</h2>
-            </Grid>
-          }
 
-          { mobile ? null :
+          <Grid key="more-title" item xs={12}>
+            { mobile
+              ? <h2 className={"Dark more-title"}>More Posts</h2>
+              : <h2 className={"Dark more-title"}>More from the blog</h2>
+            }
+
+
+          </Grid>
+
+          {
             posts.slice(-3).map((value, index) => {
               return (
                  <Grid item
                   className={"more"}
-                  xs={4}
+                  sm={4}
+                  xs={12}
                   key={'blog-page-' + index}>
                   <Item
                     id={index+1}
@@ -87,11 +81,9 @@ function BlogDetail({ width}) {
             })
           }
 
-          { mobile ? null :
-            <Grid key="more-view-more" className={"more-view-more"} item xs={12}>
-              <button className={"primary"}>View More</button>
-            </Grid>
-          }
+          <Grid key="more-view-more" className={"more-view-more"} item xs={12}>
+            <button className={"primary"}>View More</button>
+          </Grid>
 
         </Grid>
       </div>

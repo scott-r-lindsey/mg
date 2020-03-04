@@ -5,7 +5,7 @@ import withWidth from '@material-ui/core/withWidth';
 
 function Body({copy}) {
   return (
-    <div>{ copy }</div>
+    <div dangerouslySetInnerHTML={{ __html: copy }}></div>
   );
 }
 

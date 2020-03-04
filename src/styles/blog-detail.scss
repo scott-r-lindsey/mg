@@ -3,8 +3,13 @@
     .hero{
         img{
             margin: 65px 0 0 0;
-            width: 100%;
+            width: calc(100% + 40px);
             height:auto;
+            @media (max-width: $sm) {
+                &{
+                    margin: 0 -16px 0 -16px;
+                }
+            }
         }
         a{
             float:right;
@@ -18,9 +23,56 @@
     }
 
     .body{
-        background-color: blue;
-        opacity: .4;
         min-height:300px;
+        color: $greyish-brown;
+        font-family: PFDINDisplayPro-Regular;
+        font-size: 17px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.53;
+        letter-spacing: 0.3px;
+
+        .video{
+            position: relative;
+            width: 100%;
+            height:calc(100vw * .34);
+            @media (max-width: $sm) {
+                &{
+                    height:calc(100vw * .5);
+                }
+            }
+        }
+
+        h3{
+            margin:40px 0 15px 0;
+        }
+
+        figure{
+            margin:  20px 0 ;
+            img{
+                width:100%;
+                height:auto;
+                vertical-align:middle;
+            }
+            figcaption{
+                padding: 16px 26px;
+                background-color:rgba($cloudy-blue,.2);
+                border-radius:10px;
+            }
+        }
+
+        aside {
+            margin-top:40px;
+            border-left: 4px solid $peacock-blue;
+            padding-left: 22px;
+            font-family: Adelle-SemiBoldItalic;
+            font-size: 26px;
+            font-stretch: normal;
+            line-height: 1.35;
+            letter-spacing: 0.22px;
+            color: $peacock-blue;
+        }
     }
 
     .more-title{
