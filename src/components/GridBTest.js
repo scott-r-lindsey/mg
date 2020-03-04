@@ -16,44 +16,47 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function setSpacing() {
-    const width = window.innerWidth;
-    if (width > 600) {
-          return 4;
-    } else {
-          return 2;
-    }
+  const width = window.innerWidth;
+  if (width > 600) {
+    return 4;
+  } else {
+    return 2;
+  }
 }
 
 export default function CenteredGrid() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg" className={"grid-b-test"}>
-      <div className={classes.root}>
-        <Grid container spacing={setSpacing()}>
-          <Grid item xs={12}>
-            <Paper className={classes.paper}>xs=12</Paper>
+    <div>
+      <Container maxWidth="lg" className={"grid-b-test"}>
+        <div className={classes.root}>
+          <Grid container spacing={setSpacing()}>
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>xs=12</Paper>
+            </Grid>
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>xs=6</Paper>
+            </Grid>
+            <Grid item xs={6}>
+              <Paper className={classes.paper}>xs=6</Paper>
+            </Grid>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>xs=3</Paper>
+            </Grid>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>xs=3</Paper>
+            </Grid>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>xs=3</Paper>
+            </Grid>
+            <Grid item xs={3}>
+              <Paper className={classes.paper}>xs=3</Paper>
+            </Grid>
           </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>xs=6</Paper>
-          </Grid>
-          <Grid item xs={6}>
-            <Paper className={classes.paper}>xs=6</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
-          </Grid>
-          <Grid item xs={3}>
-            <Paper className={classes.paper}>xs=3</Paper>
-          </Grid>
-        </Grid>
-      </div>
-    </Container>
+        </div>
+      </Container>
+      <p style={{paddingLeft: '50px'}}> This is a test of <a href="https://material-ui.com/components/grid/">React Material UI Grid</a></p>
+    </div>
   );
 }
